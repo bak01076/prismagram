@@ -1,0 +1,26 @@
+{
+  "name": "prismagram",
+  "version": "1.0.0",
+  "repository": "https://github.com/bak01076/prismagram",
+  "author": "Jongok Yoon <bak01076@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.12.7",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "dotenv": "^8.2.0",
+    "global": "^4.4.0",
+    "graphql-tools": "^7.0.1",
+    "graphql-yoga": "^1.18.3",
+    "merge-graphql-schemas": "^1.7.8",
+    "morgan": "^1.10.0",
+    "prisma1": "^1.34.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "deploy": "prisma1 deploy",
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
