@@ -27,5 +27,8 @@ export default {
         })
         .aggregate()
         .count(),
+    files: (parent) => prisma.post({ id: parent.id }).files(),
+    comments: (parent) => prisma.post({ id: parent.id }).comments(),
+    user: ({ id }) => prisma.post({ id }).user(),
   },
 };
